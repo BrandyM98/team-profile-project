@@ -25,13 +25,12 @@ test('gets name', () => {
     expect(employee.name).toBe('China');
 });
 
+
 //gets id
 test('gets id', () => {
     const employee = new Employee('China', 12345, 'china@gmail.com');
     expect(employee.getId()).toEqual(expect.any(Number));
 });
-
-
 
 //gets email
 test('gets email', () => {
@@ -44,3 +43,5 @@ test('gets role', () => {
     const employee = new Employee('China', 12345, 'china@gmail.com');
     expect(employee.getRole()).toEqual("Employee");
 });
+
+
