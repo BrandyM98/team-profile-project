@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 /* .navbar-brand {
     font-size: 60px;
 }
@@ -24,4 +28,11 @@
     color: var(--primary);
     border: solid black;
 } */
+
+header {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 

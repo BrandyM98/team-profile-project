@@ -14,12 +14,24 @@ test('gets name', () => {
     const employee = new Employee('China', 12345, 'china@gmail.com');
     expect(employee.getName()).toEqual(expect.any(String));
 });
+//test method
+test('gets name', () => {
+    const employee = new Employee('China', 12345, 'china@gmail.com');
+    expect(employee.getName()).toBe('China');
+});
+//test constructor
+test('gets name', () => {
+    const employee = new Employee('China', 12345, 'china@gmail.com');
+    expect(employee.name).toBe('China');
+});
 
 //gets id
 test('gets id', () => {
     const employee = new Employee('China', 12345, 'china@gmail.com');
     expect(employee.getId()).toEqual(expect.any(Number));
 });
+
+
 
 //gets email
 test('gets email', () => {
