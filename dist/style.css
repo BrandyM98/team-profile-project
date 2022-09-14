@@ -25,18 +25,6 @@ main {
     margin: 15px 15px;
 }
 
-/*
-
-
-.card-header {
-    background-color: blue;
-    color: white;
-}
-
-.card-body {
-    background-color: white;
-    color: var(--primary);
-}  */
 
 header {
     background-color: red;

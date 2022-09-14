@@ -4,7 +4,6 @@ const generateHTML = require('./src/page-template');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-const Employee = require('./lib/Employee');
 
 
 const inquirer = require("inquirer");
@@ -83,7 +82,7 @@ const addManager = () => {
 
 //prompts for employee
 const addEmployee = () => {
-//console.log(``);
+
 return inquirer.prompt ([
 {
     type: 'list',
