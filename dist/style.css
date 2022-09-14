@@ -6,16 +6,26 @@ body {
     margin: 0;
 }
 
-/* .navbar-brand {
-    font-size: 60px;
-}
-
-.container {
+#container {
     margin: 100px auto;
     justify-content: space-evenly;
     display: flex;
     
 }
+
+main {
+    padding-top: 55px;
+}
+
+.groups {
+    margin-top: 15px;
+}
+
+.card-title{
+    margin: 15px 15px;
+}
+
+/*
 
 
 .card-header {
@@ -26,8 +36,7 @@ body {
 .card-body {
     background-color: white;
     color: var(--primary);
-    border: solid black;
-} */
+}  */
 
 header {
     background-color: red;
