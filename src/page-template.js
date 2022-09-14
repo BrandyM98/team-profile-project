@@ -19,7 +19,7 @@ const generateTeam = team => {
                     <li class="items">
                         ID: ${manager.getId()}
                     </li>
-                    <li class="groups">
+                    <li class="items">
                         Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a>
                     </li>
                     <li class="items">
@@ -45,11 +45,11 @@ const generateTeam = team => {
             </div>
             <div class="bg-muted">
               <ul class="groups">
-                 <li class="list">ID: ${engineer.getId()}</li>
-                    <li class="list">
+                 <li class="items">ID: ${engineer.getId()}</li>
+                    <li class="items">
                         Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a>
                     </li>
-                    <li class="list">
+                    <li class="items">
                         GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank" rel="noopener noreferrer">${engineer.getGithub()}</a>
                     </li>
                 </ul>
@@ -61,21 +61,23 @@ const generateTeam = team => {
     // create the html for interns
     const generateIntern = intern => {
         return `
-        <div>
-    <div>
-        <h2>${intern.getName()}</h2>
-        <h3>
-            <i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}
-        </h3>
-    </div>
-    <div>
-        <ul>
-            <li>ID: ${intern.getId()}</li>
-            <li>${intern.getEmail()}</a></li>
-            <li>School: ${intern.getSchool()}</li>
-        </ul>
-    </div>
-</div>
+        <div class = "col-sm-3 mx-5 card px-0 shadow" style="width: 22rem;">
+            <div class="card-body p-0  bg-primary rounded-top justify-content-center">
+                <div class="card-title text-white ps-3 mt-2">
+                    <h2>${intern.getName()}</h2>
+                    <h3>
+                         <i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}
+                    </h3>
+                </div>
+            </div>
+            <div class="bg-muted">
+                <ul class="groups>
+                    <li class="items" >ID: ${intern.getId()}</li>
+                    <li class="items" >${intern.getEmail()}</a></li>
+                    <li class="items" >School: ${intern.getSchool()}</li>
+                </ul>
+            </div>
+        </div>
         `;
     };
 
