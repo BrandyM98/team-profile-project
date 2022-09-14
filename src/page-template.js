@@ -5,22 +5,23 @@ const generateTeam = team => {
     // create the manager html
     const generateManager = manager => {
         return `
-        <div>
-            <div>
+        <div class = "col-sm-3 mx-5 card px-0 shadow" style="width: 22rem;">
+        <div class="card-body p-0  bg-primary rounded-top justify-content-center">
+            <div class="card-title text-white ps-3 mt-2">
                 <h2>${manager.getName()}</h2>
-                <h3>
+                <h3> Manager
                     <i class="fas fa-mug-hot mr-2"></i> ${manager.getRole()}
                 </h3>
             </div>
-            <div>
-                <ul>
-                    <li>
+            <div class="bg-muted">
+                <ul class="groups">
+                    <li class="items">
                         ID: ${manager.getId()}
                     </li>
-                    <li>
+                    <li class="groups">
                         Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a>
                     </li>
-                    <li>
+                    <li class="items">
                         Office number: ${manager.getOfficeNumber()}
                     </li>
                 </ul>
