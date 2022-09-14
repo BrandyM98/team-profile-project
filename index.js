@@ -1,16 +1,22 @@
+//will generate html?
+const generateHTML = require('./src/generateHTML');
+
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
+const Employee = require('./lib/Employee');
 
-// TODO: CODE GOES HERE
+
 const inquirer = require("inquirer");
 const fs = require("fs");
+
+// TODO: CODE GOES HERE
 
 const teamArray = []; 
 
 // prompts for manager
 const addManager = () => {
-    return inquirer.prompt ([
+   return inquirer.prompt ([
         {
             type: 'input',
             name: 'name',
@@ -77,8 +83,7 @@ const addManager = () => {
 
 //prompts for employee
 const addEmployee = () => {
-console.log(``);
-
+//console.log(``);
 return inquirer.prompt ([
 {
     type: 'list',
@@ -184,7 +189,7 @@ if (confirmAddEmployee) {
 })
 
 };
-
+//to generate html
 const writeFile = data => {
     fs.writeFile('./dist/index.html', data, err => {
         // error message
