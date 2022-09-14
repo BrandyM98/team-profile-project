@@ -2,3 +2,26 @@
     box-sizing: border-box;
 }
 
+.navbar-brand {
+    font-size: 60px;
+}
+
+.container {
+    margin: 100px auto;
+    justify-content: space-evenly;
+    display: flex;
+    
+}
+
+
+.card-header {
+    background-color: blue;
+    color: white;
+}
+
+.card-body {
+    background-color: white;
+    color: var(--primary);
+    border: solid black;
+}
+
