@@ -9,7 +9,7 @@ const generateTeam = team => {
             <div class="card-body p-0  bg-primary rounded-top justify-content-center">
                 <div class="card-title text-white ps-3 mt-2">
                   <h2>${manager.getName()}</h2>
-                    <h3> Manager
+                    <h3> 
                      <i class="fas fa-mug-hot mr-2"></i> ${manager.getRole()}
                     </h3>
                 </div>
@@ -71,7 +71,7 @@ const generateTeam = team => {
                 </div>
             </div>
             <div class="bg-muted">
-                <ul class="groups>
+                <ul class="groups">
                     <li class="items" >ID: ${intern.getId()}</li>
                     <li class="items" >${intern.getEmail()}</a></li>
                     <li class="items" >School: ${intern.getSchool()}</li>
@@ -123,7 +123,9 @@ module.exports = team => {
             <h1>My Team</h1>
         </header>
         <main>
+         <div id="container">
             ${generateTeam(team)}
+         </div>
         </main>
     </body>
 </html>
