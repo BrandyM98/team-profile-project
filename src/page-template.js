@@ -6,12 +6,13 @@ const generateTeam = team => {
     const generateManager = manager => {
         return `
         <div class = "col-sm-3 mx-5 card px-0 shadow" style="width: 22rem;">
-        <div class="card-body p-0  bg-primary rounded-top justify-content-center">
-            <div class="card-title text-white ps-3 mt-2">
-                <h2>${manager.getName()}</h2>
-                <h3> Manager
-                    <i class="fas fa-mug-hot mr-2"></i> ${manager.getRole()}
-                </h3>
+            <div class="card-body p-0  bg-primary rounded-top justify-content-center">
+                <div class="card-title text-white ps-3 mt-2">
+                  <h2>${manager.getName()}</h2>
+                    <h3> Manager
+                     <i class="fas fa-mug-hot mr-2"></i> ${manager.getRole()}
+                    </h3>
+                </div>
             </div>
             <div class="bg-muted">
                 <ul class="groups">
@@ -33,20 +34,22 @@ const generateTeam = team => {
     // create the html for engineers
     const generateEngineer = engineer => {
         return `
-        <div>
-            <div>
-                <h2>${engineer.getName()}</h2>
-                <h3>
+        <div class = "col-sm-3 mx-5 card px-0 shadow" style="width: 22rem;">
+            <div class="card-body p-0  bg-primary rounded-top justify-content-center">
+               <div class="card-title text-white ps-3 mt-2">
+                 <h2>${engineer.getName()}</h2>
+                 <h3>
                     <i class="fas fa-glasses mr-2"></i>${engineer.getRole()}
-                </h3>
+                 </h3>
+                </div>
             </div>
-            <div>
-                <ul>
-                    <li>ID: ${engineer.getId()}</li>
-                    <li>
+            <div class="bg-muted">
+              <ul class="groups">
+                 <li class="list">ID: ${engineer.getId()}</li>
+                    <li class="list">
                         Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a>
                     </li>
-                    <li>
+                    <li class="list">
                         GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank" rel="noopener noreferrer">${engineer.getGithub()}</a>
                     </li>
                 </ul>
