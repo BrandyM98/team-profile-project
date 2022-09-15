@@ -25,4 +25,4 @@ Run node index.js in the index.js file. After completing the questions, the gene
 Test are performed through jest. 
 
 ## Visuals
-![Alt text]()
+![Alt text](./Team-Profile.png)

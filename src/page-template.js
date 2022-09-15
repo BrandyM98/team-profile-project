@@ -73,7 +73,9 @@ const generateTeam = team => {
             <div class="bg-muted">
                 <ul class="groups">
                     <li class="items" >ID: ${intern.getId()}</li>
-                    <li class="items" >${intern.getEmail()}</a></li>
+                    <li class="items">
+                        Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a>
+                    </li>
                     <li class="items" >School: ${intern.getSchool()}</li>
                 </ul>
             </div>
